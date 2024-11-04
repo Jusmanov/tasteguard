@@ -95,6 +95,13 @@ const fetchData = async () => {
         });
 
 
+
+    } catch (error) {
+        console.error('Error fetching data:', error);
+        alert(`There was an issue fetching the data: ${error.message}`);
+    }
+};
+
 fetchData();
 
 
