@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasteguard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <div id="sidebar">
+        <h1>⍓ tasteguard</h1>
+        <input type="text" id="search-input" placeholder="search restaurants...">
+        <div id="stats">
+            <p>total inspections (last 365 days): <span id="total-inspections">0</span></p>
+            <p>restaurants with violations: <span id="violation-count">0</span></p>
+            <p>restaurants without violations: <span id="no-violation-count">0</span></p>
+        </div>
+        <h2>recent violations:</h2>
+        <ul id="recent-violations"></ul>
+    </div>
+    <div id="map"></div>
+    
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
